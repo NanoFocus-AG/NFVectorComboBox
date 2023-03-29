@@ -50,10 +50,8 @@
             // 
             // numericTextBox1
             // 
-            this.numericTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericTextBox1.Location = new System.Drawing.Point(3, 3);
-            this.numericTextBox1.MinimumSize = new System.Drawing.Size(121, 20);
+            this.numericTextBox1.IsInteger = true;
+            this.numericTextBox1.Location = new System.Drawing.Point(3, 9);
             this.numericTextBox1.Name = "numericTextBox1";
             this.numericTextBox1.Size = new System.Drawing.Size(190, 20);
             this.numericTextBox1.TabIndex = 1;
@@ -65,6 +63,7 @@
             this.Controls.Add(this.numericTextBox1);
             this.Controls.Add(this.comboBox1);
             this.MinimumSize = new System.Drawing.Size(127, 82);
+            this.Name = "VectorComboBox";
             this.Size = new System.Drawing.Size(198, 82);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
@@ -75,7 +74,7 @@
         #endregion
 
         private System.Windows.Forms.ComboBox comboBox1;
-        private NFNumericTextBox.NumericTextBox numericTextBox1;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private NFNumericTextBox.NumericTextBox numericTextBox1;
     }
 }

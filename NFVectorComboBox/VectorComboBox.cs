@@ -37,12 +37,14 @@ namespace NFVectorComboBox
             switch (MyProperty.getType())
             {
                 case NFVariant.DataType.DOUBLE_VECTOR_TYPE:
+                    numericTextBox.IsInteger = false;
                     double[] doubleList = new double[count];
                     MyProperty.getDoubleVector(doubleList, count);
                     doubleList[comboBox1.SelectedIndex] = Convert.ToDouble(comboBox1.SelectedValue);
                     MyProperty.setDoubleVector(doubleList, count);
                     break;
                 case NFVariant.DataType.INT_VECTOR_TYPE:
+                    numericTextBox.IsInteger = true;
                     long[] intList = new long[count];
                     MyProperty.getIntVector(intList, count);
                     intList[comboBox1.SelectedIndex] = Convert.ToInt64(comboBox1.SelectedValue);
@@ -64,6 +66,6 @@ namespace NFVectorComboBox
 
         //public enum Type { Integer = 1, Float }
         //[Browsable(true), DisplayName("Data Type")]
-        //public Type MyProperty { get; set; } = Type.Integer;
+        //public Type TextBoxType { get; set; } = Type.Integer;
     }
 }
