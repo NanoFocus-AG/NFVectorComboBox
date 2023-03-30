@@ -44,16 +44,18 @@
             this.comboBox1.Location = new System.Drawing.Point(3, 46);
             this.comboBox1.MinimumSize = new System.Drawing.Size(121, 0);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(190, 21);
+            this.comboBox1.Size = new System.Drawing.Size(162, 21);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
             // numericTextBox1
             // 
+            this.numericTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.numericTextBox1.IsInteger = true;
-            this.numericTextBox1.Location = new System.Drawing.Point(3, 9);
+            this.numericTextBox1.Location = new System.Drawing.Point(3, 3);
             this.numericTextBox1.Name = "numericTextBox1";
-            this.numericTextBox1.Size = new System.Drawing.Size(190, 20);
+            this.numericTextBox1.Size = new System.Drawing.Size(162, 20);
             this.numericTextBox1.TabIndex = 1;
             this.numericTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericTextBox1.Value = 0D;
@@ -62,9 +64,9 @@
             // 
             this.Controls.Add(this.numericTextBox1);
             this.Controls.Add(this.comboBox1);
-            this.MinimumSize = new System.Drawing.Size(127, 82);
+            this.MinimumSize = new System.Drawing.Size(170, 82);
             this.Name = "VectorComboBox";
-            this.Size = new System.Drawing.Size(198, 82);
+            this.Size = new System.Drawing.Size(170, 82);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

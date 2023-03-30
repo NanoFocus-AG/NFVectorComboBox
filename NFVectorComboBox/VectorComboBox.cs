@@ -6,9 +6,9 @@ using de.nanofocus.NFEval;
 
 namespace NFVectorComboBox
 {
-    public partial class VectorComboBox: UserControl
+    public partial class VectorComboBox : UserControl
     {
-        
+
         public VectorComboBox()
         {
             InitializeComponent();
@@ -18,7 +18,7 @@ namespace NFVectorComboBox
             comboBox1.DataSource = bindingSource;
         }
 
-      
+
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public BindingSource bindingSource => bindingSource1;
 
@@ -60,7 +60,7 @@ namespace NFVectorComboBox
             if (comboBox1.SelectedIndex >= 0)
             {
                 checkType();
-           
+
             }
         }
 
